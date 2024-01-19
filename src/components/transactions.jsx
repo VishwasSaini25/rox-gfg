@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import month from "../month";
-const SearchTransactionPage = () => {
-  const [selectedMonth, setSelectedMonth] = useState(3);
+const SearchTransactionPage = ({hookProp}) => {
+  const [selectedMonth, setSelectedMonth] = hookProp;
   const [data,setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [search, setSearch] = useState("");
-  const [searchText, setSearchText] = useState("");
   const [paginationModel, setPaginationModel] = useState({
     pageSize: 3,
     page: 1,

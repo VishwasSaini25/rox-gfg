@@ -16,7 +16,7 @@
 .heading h3{
     font-size: 22px;
 }
-.transaction-table{
+.transaction-table,.stats-pieChart{
     margin: 5%;
 }
   input[type="text"] {
@@ -83,4 +83,37 @@ tbody img{
 }
 th{
     text-align: center !important;
+}
+
+/* statistics & piechart styling */
+.statistics{
+  display: flex;
+  justify-content: space-between;
+}
+.stats{
+  width:45%;
+}
+.stats-month{
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+}
+.stats-month h5{
+  font-size: 14px;
+  padding-inline-start: 2%;
+}
+.stats-details{
+  margin-top: 3%;
+  padding: 3%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 65%;
+  border-radius: 30px;
+  background-color:palegreen;
+}
+.stats-details h4{
+  text-align: left;
+}
+.stats-details h3{
+  font-size: 22px;
 }
